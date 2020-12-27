@@ -3,7 +3,7 @@ DATEN = [15,12,0,14,3,1]
 
 
 
-for i in range(6,2020):
+for i in range(6,30000000):
     aktuell = 0
     last = DATEN[i-1]
     if DATEN.count(last) > 1:

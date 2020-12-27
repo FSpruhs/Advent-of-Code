@@ -2,7 +2,7 @@ daten = []
 ergebnis = 0
 
 try:
-    datei = open("Daten.txt","r")
+    datei = open("Daten.txt", "r")
     text = datei.read().splitlines()
     datei.close()
     tmp = ""
@@ -10,10 +10,10 @@ try:
         tmp += link
         if link == "":
             daten.append(tmp)
-            tmp=""
+            tmp = ""
 except:
     print("Datei konnte nicht geladen werden")
-    
+
 
 def zaehl_buchstaben(x):
     count = 0
@@ -21,10 +21,10 @@ def zaehl_buchstaben(x):
     count += len(set(x))
     print(count)
     return count
-        
 
 
 for i in range(len(daten)):
     ergebnis += zaehl_buchstaben(daten[i])
+
 
 print(ergebnis)

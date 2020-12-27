@@ -19,6 +19,3 @@ for zahl in zahlen:
                 print(ergebnis)
                 print(zahl1)
                 print(i)
-            
-        
-    
